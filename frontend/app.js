@@ -13,7 +13,7 @@
 const CONFIG = {
   // ⚙️  Change this string to your deployed API URL when going live.
   // e.g. "https://your-api.railway.app" or "https://your-api.onrender.com"
-  BACKEND_URL: window.BACKEND_URL || "http://localhost:5000",
+  BACKEND_URL: window.BACKEND_URL || "autonomous-research-agent-production-d61d.up.railway.app",
   GITHUB_URL:  "https://github.com/mr-ahtashamulhaq/autonomous-research-agent",
 };
 
