@@ -1,15 +1,20 @@
 /**
- * ResearchAgent - Chat Interface Logic
+ * ResearchAgent — Chat Interface Logic
  *
  * All visual "thinking" content per step is generated purely on the frontend.
  * No changes required to agent.py or api.py.
  *
- * Change BACKEND_URL when deploying to production:
+ * BACKEND_URL:
+ *   - Local dev  → http://localhost:5000  (automatic)
+ *   - Production → set window.BACKEND_URL in a <script> tag, OR
+ *                  update this string directly before deploying.
  */
 
 const CONFIG = {
-  BACKEND_URL: "http://localhost:5000",
-  GITHUB_URL: "https://github.com",
+  // ⚙️  Change this string to your deployed API URL when going live.
+  // e.g. "https://your-api.railway.app" or "https://your-api.onrender.com"
+  BACKEND_URL: window.BACKEND_URL || "http://localhost:5000",
+  GITHUB_URL:  "https://github.com/mr-ahtashamulhaq/autonomous-research-agent",
 };
 
 /* ── Pipeline step metadata ──────────────────────────────── */
